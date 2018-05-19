@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .yinyang {
+            width: 192px;
+            height: 96px;
+            color: #fff;
+            border-color: #000;
+            border-width: 4px 4px 100px 4px;
+            border-style: solid;
+            border-radius: 50%;
+            position: relative;
+        }
+        .yinyang::before {
+            content:"";
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-width: 38px;
+            border-color: #000;
+            border-style: solid;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+        }
+        .yinyang::after {
+            content:"";
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            border-width: 38px;
+            border-color: #fff;
+            border-style: solid;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: 50%;
+        }
+    </style>
+    <title>CSS画一个八卦</title>
+</head>
+<body>
+    <div class="yinyang"></div>
+</body>
+</html>
